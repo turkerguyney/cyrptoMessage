@@ -9,6 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
+    
+    
+    @IBOutlet weak var textField: UITextField!
+    
+    
+    @IBOutlet weak var genButton: UIButton!
+    
+    
+    
+    @IBOutlet weak var imView: UIImageView!
+    
+    
+    @IBOutlet weak var slider: UISlider!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

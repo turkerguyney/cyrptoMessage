@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cyrptoMessage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QDT-va-BFW">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0h-7E-1Nb">
+                                <rect key="frame" x="464" y="66" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.61176470588235299" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Bav-8f-4Bq"/>
+                                </constraints>
+                                <state key="normal" title="Generate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WCv-Cb-5Xl">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="rV4-Wj-q0k"/>
+                                </constraints>
+                            </imageView>
+                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="lQh-hp-gB7">
+                                <rect key="frame" x="241" y="474" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="r4o-be-2qD"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.75294117647058822" green="0.22352941176470587" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.82745098039999998" green="0.3294117647" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WCv-Cb-5Xl" firstAttribute="centerX" secondItem="QDT-va-BFW" secondAttribute="centerX" id="7XM-0d-Ofe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lQh-hp-gB7" secondAttribute="bottom" constant="96" id="85P-AV-3cq"/>
+                            <constraint firstItem="QDT-va-BFW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="Lhf-SV-1Xi"/>
+                            <constraint firstItem="QDT-va-BFW" firstAttribute="trailing" secondItem="H0h-7E-1Nb" secondAttribute="trailing" id="N3u-OM-0TZ"/>
+                            <constraint firstItem="QDT-va-BFW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="OLB-Be-bTw"/>
+                            <constraint firstItem="lQh-hp-gB7" firstAttribute="centerX" secondItem="WCv-Cb-5Xl" secondAttribute="centerX" id="jU5-Sw-7bj"/>
+                            <constraint firstItem="lQh-hp-gB7" firstAttribute="top" secondItem="WCv-Cb-5Xl" secondAttribute="bottom" constant="74" id="rfw-7P-U5s"/>
+                            <constraint firstItem="WCv-Cb-5Xl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sTi-YR-xia"/>
+                            <constraint firstItem="WCv-Cb-5Xl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wFu-Qp-Vh4"/>
+                            <constraint firstItem="H0h-7E-1Nb" firstAttribute="top" secondItem="QDT-va-BFW" secondAttribute="bottom" constant="8" symbolic="YES" id="yu4-Df-r7X"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="genButton" destination="H0h-7E-1Nb" id="EGX-Yj-4c5"/>
+                        <outlet property="imView" destination="WCv-Cb-5Xl" id="dwN-mE-X5X"/>
+                        <outlet property="slider" destination="lQh-hp-gB7" id="7Pr-ce-mAv"/>
+                        <outlet property="textField" destination="QDT-va-BFW" id="QPQ-0e-r2N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="581" y="398"/>
         </scene>
     </scenes>
 </document>
