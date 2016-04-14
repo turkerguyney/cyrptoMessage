@@ -15,6 +15,8 @@
 		B26F4F0A1CBD2A360058877F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26F4F081CBD2A360058877F /* LaunchScreen.storyboard */; };
 		B286520A1CBEB48100E18156 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28652091CBEB48100E18156 /* AssetsLibrary.framework */; };
 		B286522F1CBECEBD00E18156 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B286522E1CBECEBD00E18156 /* Photos.framework */; };
+		B2AFEAD81CBFA21400185B96 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFEAD71CBFA21400185B96 /* mainViewController.swift */; };
+		B2AFEADA1CBFA23E00185B96 /* readViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFEAD91CBFA23E00185B96 /* readViewController.swift */; };
 		B2CE51231CBE8E27006F4659 /* facebook-128.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CE51211CBE8E27006F4659 /* facebook-128.png */; };
 		B2CE51241CBE8E27006F4659 /* bird_twitter_new_square.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CE51221CBE8E27006F4659 /* bird_twitter_new_square.png */; };
 		B2CE51261CBE90BA006F4659 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CE51251CBE90BA006F4659 /* Social.framework */; };
@@ -31,6 +33,8 @@
 		B26F4F0B1CBD2A360058877F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28652091CBEB48100E18156 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B286522E1CBECEBD00E18156 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		B2AFEAD71CBFA21400185B96 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		B2AFEAD91CBFA23E00185B96 /* readViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = readViewController.swift; sourceTree = "<group>"; };
 		B2CE51211CBE8E27006F4659 /* facebook-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-128.png"; sourceTree = "<group>"; };
 		B2CE51221CBE8E27006F4659 /* bird_twitter_new_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird_twitter_new_square.png; sourceTree = "<group>"; };
 		B2CE51251CBE90BA006F4659 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -80,6 +84,8 @@
 				B26F4F081CBD2A360058877F /* LaunchScreen.storyboard */,
 				B26F4F0B1CBD2A360058877F /* Info.plist */,
 				B26F4F031CBD2A360058877F /* cyrptoMessage.xcdatamodeld */,
+				B2AFEAD71CBFA21400185B96 /* mainViewController.swift */,
+				B2AFEAD91CBFA23E00185B96 /* readViewController.swift */,
 			);
 			path = cyrptoMessage;
 			sourceTree = "<group>";
@@ -168,7 +174,9 @@
 			files = (
 				B26F4EFF1CBD2A360058877F /* ViewController.swift in Sources */,
 				B26F4EFD1CBD2A360058877F /* AppDelegate.swift in Sources */,
+				B2AFEADA1CBFA23E00185B96 /* readViewController.swift in Sources */,
 				B26F4F051CBD2A360058877F /* cyrptoMessage.xcdatamodeld in Sources */,
+				B2AFEAD81CBFA21400185B96 /* mainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

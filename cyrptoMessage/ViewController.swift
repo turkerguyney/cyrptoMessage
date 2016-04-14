@@ -47,13 +47,7 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func saveAct(sender: AnyObject) {
-        
-  
 
-        
-       
-    }
     
     
     
